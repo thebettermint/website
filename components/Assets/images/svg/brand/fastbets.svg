@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="51.333mm" height="8.2553mm" version="1.1" viewBox="0 0 51.333 8.2553" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-143.33 -151.72)">
+  <text x="150.07265" y="159.88977" fill="#000000" font-family="'Montserrat Alternates'" font-size="10.583px" font-style="italic" font-weight="bold" stroke-width=".26458" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;line-height:1.25" xml:space="preserve"><tspan x="150.07265" y="159.88977" fill="#000000" font-family="'Montserrat Alternates'" font-size="10.583px" font-style="italic" font-weight="bold" stroke-width=".26458" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">fast</tspan></text>
+  <text x="172.27231" y="159.9321" fill="#000000" font-family="Montserrat" font-size="10.583px" stroke-width=".26458" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 300;line-height:1.25" xml:space="preserve"><tspan x="172.27231" y="159.9321" fill="#000000" font-family="Montserrat" font-size="10.583px" stroke-width=".26458" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variation-settings:'wght' 300">bets</tspan></text>
+  <g transform="matrix(1.0135 0 0 .74566 124.48 21.291)" fill="#a63f3f" stroke="#a63f3f">
+   <path d="m23.22 185.79 2.1065-10.744h-2.5402l-2.0756 10.805z" stroke-width=".26205px"/>
+   <path d="m18.762 185.95 1.795-10.882-1.8259 0.0312z" stroke-width=".26548px"/>
+   <g stroke-dashoffset="2.2677">
+    <path transform="scale(.26458)" d="m79.369 701.07c0.09895-0.50059 1.7846-9.4366 3.746-19.858l3.5661-18.948h4.0703c2.2387 0 4.0703 0.0877 4.0703 0.19497 0 0.33831-7.3018 38.334-7.4835 38.942-0.15259 0.50998-0.64985 0.57919-4.1612 0.57919h-3.9879z" stroke-width="1.4665" style="paint-order:stroke markers fill"/>
+    <path transform="scale(.26458)" d="m71.692 685.23c-0.02113-4.3848-0.13664-11.348-0.25669-15.473l-0.21828-7.5002h5.6904l-0.17587 1.0756c-0.09673 0.59159-1.2616 7.5543-2.5885 15.473l-2.4126 14.397z" stroke-width="1.4665" style="paint-order:stroke markers fill"/>
+    <path d="m18.914 183.97c-0.0027-0.47139-8.3e-5 -0.4969 0.05032-0.4969 0.04576 0 0.051 0.0208 0.0378 0.15022-0.0084 0.0826-0.03107 0.30623-0.05032 0.4969l-0.03499 0.34667z" stroke-width=".38613" style="paint-order:stroke markers fill"/>
+   </g>
+  </g>
+ </g>
+</svg>

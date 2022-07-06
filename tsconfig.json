@@ -1,0 +1,12 @@
+{
+  "extends": "@thebettermint/tsconfig",
+  "exclude": ["node_modules"],
+  "include": ["**/*"],
+  "compilerOptions": {
+    "rootDir": ".",
+    "outDir": "dist",
+    "target": "es5",
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true
+  }
+}

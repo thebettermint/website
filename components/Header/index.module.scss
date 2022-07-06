@@ -1,0 +1,126 @@
+@import "../Styles/index.scss";
+
+.header {
+  position: relative;
+  z-index: 3;
+  height: 34px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  background-color: var(--header-dafault-main-color);
+
+  padding: 0 16px;
+
+  font-family: AvenirNext, sans-serif;
+
+  &.invert {
+    background-color: var(--header-invert-main-color);
+  }
+}
+
+.headerLeft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  height: 34px;
+
+  z-index: 6;
+
+  height: 34px;
+
+  display: flex;
+  width: fit-content;
+  flex-direction: row;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 24px;
+  }
+}
+
+.headerCenter {
+  position: absolute;
+  top: 0;
+  height: 34px;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .networkWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    z-index: 7;
+
+    padding: 1px 6px;
+    border-radius: 7px;
+
+    width: 80px;
+    height: 16px;
+    background-color: transparent;
+    //background-color: var(--header-default-accent-color);
+    box-shadow: 0 0 5px 0 rgba(112, 112, 112, 0.2);
+
+    &.clear {
+      background-color: transparent;
+    }
+
+    &.red {
+      border: rgba(255, 157, 157, 0.5) 1px solid;
+    }
+
+    &.green {
+      border: rgba(177, 255, 157, 0.5) 1px solid;
+    }
+
+    .network {
+      flex-grow: 1;
+
+      margin: 0px;
+      height: fit-content;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: var(--header-default-font-color);
+      font-size: 11px;
+
+      &.invert {
+        color: var(--header-alt-font-color);
+      }
+
+      &.forceFontColor {
+        color: var(--header-default-font-color);
+      }
+    }
+  }
+}
+.hamburger {
+  position: absolute;
+  top: 0;
+  right: 16px;
+
+  height: 34px;
+  width: fit-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,79 @@
+@import 'scss/default/variables';
+@import 'scss/default/themes';
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  .absoluteTheme {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .screen {
+    width: 100vw;
+    height: 100vh;
+
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px red solid;
+  }
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3.5em;
+
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
