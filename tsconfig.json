@@ -1,12 +1,18 @@
 {
   "extends": "@thebettermint/tsconfig",
-  "exclude": ["node_modules"],
-  "include": ["**/*"],
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "**/*"
+  ],
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
     "target": "es5",
     "jsx": "preserve",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "noPropertyAccessFromIndexSignature": false,
+    "isolatedModules": true
   }
 }
