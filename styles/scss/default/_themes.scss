@@ -3,7 +3,11 @@
   color: $color-black;
   border-color: $color-black;
   $theme-color-light: red;
-  --theme-color-dark: blue;
+
+  --theme-bg-color: #dadada;
+  --theme-border-color: rgb(49, 49, 49);
+  --theme-color-dark: rgb(49, 49, 49);
+  --theme-footer-bg: $color-frost;
 
   a {
     color: $theme-color-3;
@@ -18,7 +22,11 @@
   color: $color-white;
   border-color: $color-white;
   $theme-color-dark: blue;
-  --theme-color-dark: #75eef2;
+
+  --theme-bg-color: #252525;
+  --theme-color-dark: #e2e2e2;
+  --theme-border-color: #e2e2e2;
+  --theme-footer-bg: $color-charcoal;
 
   $theme-color-dark-hover: #2bff00;
   --theme-color-dark-hover: #8956e2;

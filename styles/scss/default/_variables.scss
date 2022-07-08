@@ -15,11 +15,11 @@ $color-black: #000000;
 /*===============================
     Font Family 
 =================================*/
-$body-font: "Poppins", sans-serif;
-$heading-font: "Poppins", sans-serif;
+$body-font: 'Poppins', sans-serif;
+$heading-font: 'Poppins', sans-serif;
 
 // Heading Font List
-$font-1: "Poppins", sans-serif;
+$font-1: 'Poppins', sans-serif;
 
 $fontList: $font-1;
 
@@ -51,12 +51,13 @@ $util-button-color: #3350f5e3;
 $util-button-diabled: #b8b8b883;
 
 // Layouts
-$smlg-device: "only screen and (max-width: 1199px)";
-$extra-device: "only screen and (min-width: 1600px) and (max-width: 1919px)";
-$laptop-device: "only screen and (min-width: 1200px) and (max-width: 1599px)";
-$xlg-layout: "only screen and (min-width: 1300px)";
-$lg-layout: "only screen and (min-width: 992px) and (max-width: 1199px)";
-$md-layout: "only screen and (min-width: 768px) and (max-width: 991px)";
-$sm-layout: "only screen and (max-width: 767px)";
-$large-mobile: "only screen and (max-width: 575px)";
-$small-mobile: "only screen and (max-width: 479px)";
+$smlg-device: 'only screen and (max-width: 1199px)';
+$extra-device: 'only screen and (min-width: 1600px) and (max-width: 1919px)';
+$laptop-device: 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$xlg-layout: 'only screen and (min-width: 1300px)';
+$lg-layout: 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md-layout: 'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm-layout: 'only screen and (max-width: 767px)';
+$xsm-layout: 'only screen and (max-width: 625px)';
+$large-mobile: 'only screen and (max-width: 575px)';
+$small-mobile: 'only screen and (max-width: 479px)';
