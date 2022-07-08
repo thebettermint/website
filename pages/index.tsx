@@ -1,5 +1,5 @@
 import type { NextPage } from 'next';
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import Head from 'next/head';
 import styles from '../styles/index.module.scss';
@@ -45,6 +45,14 @@ const Home: NextPage = () => {
   const aboutRef = useRef<any>(null);
   const joinRef = useRef<any>(null);
   const contactRef = useRef<any>(null);
+  const servicesRef = useRef<any>(null);
+
+  const [theme, setTheme] = useState(undefined);
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setTheme(storeContext.theme[0]);
+    }
+  }, [storeContext.theme[0]]);
 
   return (
     <div className={`${styles.container}`}>
@@ -59,7 +67,13 @@ const Home: NextPage = () => {
         <link rel="manifest" href="/manifest.json" />
       </Head>
 
-      <Header home={homeRef} about={aboutRef} join={joinRef} contact={contactRef} />
+      <Header
+        home={homeRef}
+        about={aboutRef}
+        join={joinRef}
+        contact={contactRef}
+        services={servicesRef}
+      />
 
       {/* LANDING PAGE */}
       <div ref={homeRef} className={styles.screen}>
@@ -67,7 +81,7 @@ const Home: NextPage = () => {
           <div className={styles.logoWrapper}>
             <Logo width={'80%'} height={'100%'} style={{ maxHeight: '154px' }} />
             <Title
-              fill={storeContext.theme[0] === 'dark' ? 'white' : null}
+              fill={theme === 'dark' ? 'white' : null}
               width={'90%'}
               height={54}
               style={{ margin: '10px' }}
@@ -76,11 +90,11 @@ const Home: NextPage = () => {
 
           <div className={styles.subtitle}>nft automation</div>
           <div className={styles.socials}>
-            <Discord fill={storeContext.theme[0] === 'dark' ? 'white' : null} size={28} />
-            <Facebook fill={storeContext.theme[0] === 'dark' ? 'white' : null} size={28} />
-            <Twitter fill={storeContext.theme[0] === 'dark' ? 'white' : null} size={28} />
-            <Telegram fill={storeContext.theme[0] === 'dark' ? 'white' : null} size={28} />
-            <Github fill={storeContext.theme[0] === 'dark' ? 'white' : null} size={28} />
+            <Discord fill={theme === 'dark' ? 'white' : null} size={28} />
+            <Facebook fill={theme === 'dark' ? 'white' : null} size={28} />
+            <Twitter fill={theme === 'dark' ? 'white' : null} size={28} />
+            <Telegram fill={theme === 'dark' ? 'white' : null} size={28} />
+            <Github fill={theme === 'dark' ? 'white' : null} size={28} />
           </div>
           <div className={styles.buttonWrapper}>
             <Button
@@ -142,24 +156,18 @@ const Home: NextPage = () => {
           }}
           onClick={() => console.log('clicked')}
           className={styles.pageButton}>
-          <div>join</div>
-          <div>join</div>
+          <div>services</div>
+          <div>services</div>
         </Button>
       </div>
 
-      {/* ABOUT PAGE */}
-      <div className={`${styles.screen} ${styles.cards}`}>
+      {/* SERVICES PAGE */}
+      <div ref={servicesRef} className={`${styles.screen} ${styles.cards}`}>
         <div className={styles.background}>
-          <Hex1
-            width={'100%'}
-            stroke={storeContext.theme[0] === 'dark' ? '#ffffff15' : '#00000015'}
-          />
+          <Hex1 width={'100%'} stroke={theme === 'dark' ? '#ffffff15' : '#00000015'} />
         </div>
         <div className={styles.background} style={{ bottom: '-50px', right: '-100%' }}>
-          <Hex1
-            width={'60%'}
-            stroke={storeContext.theme[0] === 'dark' ? '#ffffff15' : '#00000015'}
-          />
+          <Hex1 width={'60%'} stroke={theme === 'dark' ? '#ffffff15' : '#00000015'} />
         </div>
         <div className={styles.inner}>
           <div className={styles.cardContainer}>
@@ -244,16 +252,10 @@ const Home: NextPage = () => {
       {/* CONTACT PAGE */}
       <div ref={contactRef} className={`${styles.screen} ${styles.contact}`}>
         <div className={styles.background}>
-          <Hex1
-            width={'100%'}
-            stroke={storeContext.theme[0] === 'dark' ? '#ffffff15' : '#00000015'}
-          />
+          <Hex1 width={'100%'} stroke={theme === 'dark' ? '#ffffff15' : '#00000015'} />
         </div>
         <div className={styles.background} style={{ bottom: '-50px', left: '-60%' }}>
-          <Hex1
-            width={'60%'}
-            stroke={storeContext.theme[0] === 'dark' ? '#ffffff15' : '#00000015'}
-          />
+          <Hex1 width={'60%'} stroke={theme === 'dark' ? '#ffffff15' : '#00000015'} />
         </div>
         <div className={styles.inner}>
           <div className={styles.form}>

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 import { MenuBurger } from '../Icons';
 
@@ -12,24 +12,36 @@ import { useStoreContext } from '../../context/store';
 import Panel from '../Panel';
 
 interface Props {
-  theme?: string;
   invert?: boolean;
   home?: any;
+  services?: any;
   about?: any;
   contact?: any;
   join?: any;
 }
 
-const Header = ({ theme, home, about, contact, join }: Props) => {
+const Header = ({ home, services, about, contact, join }: Props) => {
   const hamRef = useRef<HTMLDivElement>(null);
   const storeContext = useStoreContext();
+
+  const [theme, setTheme] = useState('');
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setTheme(storeContext.theme[0]);
+    }
+  }, [storeContext.theme[0]]);
 
   const [isDropdown, toggleDropdown] = useState<Boolean>(false);
 
   const dropdown = () => {
     if (!isDropdown) return null;
     if (hamRef.current) hamRef.current.style.zIndex = '9';
-    return <Panel close={() => toggleDropdown(!isDropdown)} />;
+    return (
+      <Panel
+        pages={{ home: home, services: services, about: about, contact: contact, join: join }}
+        close={() => toggleDropdown(!isDropdown)}
+      />
+    );
   };
 
   const handleMenuClick = () => toggleDropdown(!isDropdown);
@@ -41,11 +53,11 @@ const Header = ({ theme, home, about, contact, join }: Props) => {
       <div className={style.headerLeft}>
         <Title
           className={style.title}
-          fill={storeContext.theme[0] === 'dark' ? 'white' : null}
+          fill={theme === 'dark' ? 'white' : null}
           width={'90%'}
           height={42}
         />
-        <Logo className={style.logo} width={'90%'} height={42} />
+        <Logo className={style.logo} width={36} height={36} />
       </div>
 
       <div className={`${style.headerCenter} ${theme ? style[theme] : null}`}></div>
@@ -54,12 +66,13 @@ const Header = ({ theme, home, about, contact, join }: Props) => {
         <div className={style.items}>
           <div onClick={() => home.current.scrollIntoView()}>home</div>
           <div onClick={() => about.current.scrollIntoView()}>about</div>
+          <div onClick={() => services.current.scrollIntoView()}>services</div>
           <div onClick={() => join.current.scrollIntoView()}>join</div>
           <div onClick={() => contact.current.scrollIntoView()}>contact</div>
           <ThemeToggle />
         </div>
         <div className={style.ham} onClick={handleMenuClick}>
-          <MenuBurger fill={storeContext.theme[0] === 'dark' ? 'white' : null} size={24} />
+          <MenuBurger fill={theme === 'dark' ? 'white' : null} size={24} />
         </div>
       </div>
       {dropdown()}
