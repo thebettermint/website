@@ -1,10 +1,6 @@
 import React, { ReactNode, useState, useRef, useEffect } from 'react';
 import styles from './index.module.scss';
 
-interface IThemeList {
-  [index: string]: any;
-}
-
 interface IBorder {
   line?: string;
   width?: number;
@@ -28,22 +24,12 @@ interface Props {
   onClick: () => void | Promise<void>;
 }
 
-const defaultStyle = {
-  background: 'grey',
-  color: 'black',
-  borderLine: 'solid',
-  borderColor: 'black',
-  borderWidth: 1,
-};
-
 const Index = ({
   type,
   theme,
   width,
   height,
   margin,
-  color,
-  accent,
   border,
   loader,
   children,

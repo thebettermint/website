@@ -6,10 +6,7 @@ import styles from '../styles/index.module.scss';
 
 import Footer from '../components/Footer';
 
-import ThemeToggle from '../components/Theme/themeToggle';
-
 import { useStoreContext } from '../context/store';
-import { useRouter } from 'next/router';
 
 import Image from 'next/image';
 
@@ -26,7 +23,6 @@ import Hex3 from '../components/Assets/images/svg/thebettermint/hex3.svg';
 import Hex4 from '../components/Assets/images/svg/thebettermint/hex4.svg';
 
 import Module from '../components/Assets/images/png/thebettermint/molecular.png';
-import ContactImg from '../components/Assets/images/png/thebettermint/contact.png';
 import ContactSvg from '../components/Assets/images/svg/thebettermint/contact.svg';
 
 import {
@@ -35,9 +31,7 @@ import {
   Twitter,
   Github,
   Telegram,
-  Shield,
   Bullseye,
-  Target,
   Receipt,
   TimeOclock,
 } from '../components/Icons';
@@ -45,7 +39,6 @@ import {
 import Button from '../components/Button';
 
 const Home: NextPage = () => {
-  const router = useRouter();
   const storeContext = useStoreContext();
 
   const homeRef = useRef<any>(null);

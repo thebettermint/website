@@ -1,26 +1,12 @@
 import React from 'react';
 import styles from './index.module.scss';
 
-import Vercel from '../Assets/images/svg/vercel.svg';
-
-import Logo from '../Assets/images/svg/thebettermint/logo.svg';
 import Title from '../Assets/images/svg/thebettermint/boilerplate.svg';
 import LinkLogo from '../Assets/images/png/thebettermint/horizontal.png';
 
 import Image from 'next/image';
 
-import {
-  Discord,
-  Facebook,
-  Twitter,
-  Github,
-  Telegram,
-  Shield,
-  Bullseye,
-  Target,
-  Receipt,
-  TimeOclock,
-} from '../Icons';
+import { Discord, Facebook, Twitter, Github, Telegram } from '../Icons';
 
 import { useStoreContext } from '../../context/store';
 

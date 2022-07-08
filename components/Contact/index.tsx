@@ -50,7 +50,6 @@ const Contact = () => {
         /*               ref={addressRef} */
         className={styles.textarea}
         placeholder="tell us about you"
-        label="about you"
         /*               onChange={handleChange} */
       />
 

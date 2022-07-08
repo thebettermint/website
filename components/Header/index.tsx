@@ -1,6 +1,6 @@
-import React, { useState, ReactNode, MouseEventHandler, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 
-import { MenuBurger, Cross, Bell, Globe, Search } from '../Icons';
+import { MenuBurger } from '../Icons';
 
 import ThemeToggle from '../Theme/themeToggle';
 import Title from '../Assets/images/svg/thebettermint/boilerplate.svg';
@@ -20,7 +20,7 @@ interface Props {
   join?: any;
 }
 
-const Header = ({ theme, invert, home, about, contact, join }: Props) => {
+const Header = ({ theme, home, about, contact, join }: Props) => {
   const hamRef = useRef<HTMLDivElement>(null);
   const storeContext = useStoreContext();
 

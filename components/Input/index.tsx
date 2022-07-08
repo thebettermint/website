@@ -4,20 +4,12 @@ import React, {
   useRef,
   useEffect,
   MouseEventHandler,
-  FocusEventHandler,
   ReactNode,
-  RefCallback,
-  RefAttributes,
-  RefObject,
   forwardRef,
   LegacyRef,
   ChangeEventHandler,
 } from 'react';
 import style from './index.module.scss';
-
-interface IThemeList {
-  [index: string]: any;
-}
 
 interface IBorder {
   line?: string;
@@ -50,24 +42,7 @@ var invalidChars = ['-', '+', 'e'];
 
 const Input = forwardRef(
   (
-    {
-      type,
-      theme,
-      value,
-      width,
-      height,
-      margin,
-      color,
-      accent,
-      border,
-      placeholder,
-      label,
-      children,
-      className,
-      onFocus,
-      onUnfocus,
-      onChange,
-    }: Props,
+    { type, value, placeholder, label, children, className, onFocus, onUnfocus, onChange }: Props,
     ref: LegacyRef<HTMLInputElement> | undefined
   ) => {
     const labelRef = useRef<HTMLLabelElement>(null);

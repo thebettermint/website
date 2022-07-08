@@ -1,25 +1,14 @@
-import React, { useState, ReactNode, MouseEventHandler, useEffect, useRef } from 'react';
-
-import { MenuBurger, Cross, Bell, Globe, Search } from '../Icons';
+import React from 'react';
 
 import ThemeToggle from '../Theme/themeToggle';
-import Title from '../Assets/images/svg/thebettermint/boilerplate.svg';
-import Logo from '../Assets/images/svg/thebettermint/logo.svg';
 
 import style from './index.module.scss';
 
-import { useStoreContext } from '../../context/store';
-
 interface Props {
-  theme?: string;
   close: () => void;
 }
 
-const Panel = ({ theme, close }: Props) => {
-  const handleNavClick = (page: string) => {
-    close();
-  };
-
+const Panel = ({ close }: Props) => {
   return (
     <>
       <div className={`${style.panel}`}>
