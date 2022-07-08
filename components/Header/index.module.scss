@@ -65,10 +65,14 @@
   .items {
     position: absolute;
     top: 36px;
-    right: 64px;
+    right: 36px;
     font-family: MontserratAlt;
     height: 34px;
-    width: 380px;
+    width: 400px;
+
+    div {
+      margin-right: 10px;
+    }
 
     display: flex;
     justify-content: space-between;
@@ -85,7 +89,7 @@
   @media #{$lg-layout} {
     .items {
       flex-wrap: wrap;
-      width: 300px;
+      width: 360px;
       div {
         margin-bottom: 10px;
       }
@@ -95,7 +99,7 @@
   @media #{$md-layout} {
     .items {
       flex-wrap: wrap;
-      width: 200px;
+      width: 240px;
       div {
         margin-bottom: 20px;
         margin-right: 10px;
