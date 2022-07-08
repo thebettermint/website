@@ -16,10 +16,15 @@
     position: absolute;
     top: 12px;
     right: 12px;
+    user-select: none;
+    &:hover {
+      cursor: pointer;
+      letter-spacing: 0.1em;
+    }
   }
 
   .items {
-    background-color: var(--theme-bg-color);
+    background-color: var(--theme-panel-color);
 
     font-family: MontserratAlt;
     position: absolute;
@@ -34,8 +39,14 @@
     justify-content: center;
     align-items: center;
 
-    div {
+    .nav {
       margin-bottom: 24px;
+      user-select: none;
+      &:hover {
+        cursor: pointer;
+        letter-spacing: 0.1em;
+        border-bottom: solid var(--theme-border-color) 1px;
+      }
     }
   }
 }

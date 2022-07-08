@@ -70,8 +70,13 @@
     height: 34px;
     width: 400px;
 
-    div {
+    .nav {
+      user-select: none;
       margin-right: 10px;
+      &:hover {
+        cursor: pointer;
+        border-bottom: solid var(--theme-border-color) 1px;
+      }
     }
 
     display: flex;
@@ -136,6 +141,9 @@
     .ham {
       display: block;
       z-index: 6;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

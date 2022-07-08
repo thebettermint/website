@@ -101,7 +101,7 @@ const Home: NextPage = () => {
               type="secondary"
               theme={'light'}
               height={'45px'}
-              onClick={() => console.log('clicked')}
+              onClick={() => contactRef.current.scrollIntoView()}
               className={styles.button}>
               register
             </Button>
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
               type="secondary"
               theme={'light'}
               height={'45px'}
-              onClick={() => console.log('clicked')}
+              onClick={() => aboutRef.current.scrollIntoView()}
               className={styles.button}>
               explore
             </Button>
@@ -127,7 +127,7 @@ const Home: NextPage = () => {
             alignItems: 'center',
             padding: '16px 0',
           }}
-          onClick={() => console.log('clicked')}
+          onClick={() => aboutRef.current.scrollIntoView()}
           className={styles.pageButton}>
           <div>learn more</div>
           <div>about</div>
@@ -154,7 +154,7 @@ const Home: NextPage = () => {
             alignItems: 'center',
             padding: '16px 0',
           }}
-          onClick={() => console.log('clicked')}
+          onClick={() => servicesRef.current.scrollIntoView()}
           className={styles.pageButton}>
           <div>services</div>
           <div>services</div>
@@ -197,7 +197,7 @@ const Home: NextPage = () => {
             alignItems: 'center',
             padding: '16px 0',
           }}
-          onClick={() => console.log('clicked')}
+          onClick={() => joinRef.current.scrollIntoView()}
           className={styles.pageButton}>
           <div>join</div>
           <div>join</div>
@@ -220,7 +220,7 @@ const Home: NextPage = () => {
               theme={'light'}
               height={'48px'}
               width={'150px'}
-              onClick={() => console.log('clicked')}
+              onClick={() => contactRef.current.scrollIntoView()}
               className={styles.button}>
               <div>join today</div>
             </Button>
@@ -242,7 +242,7 @@ const Home: NextPage = () => {
             alignItems: 'center',
             padding: '16px 0',
           }}
-          onClick={() => console.log('clicked')}
+          onClick={() => contactRef.current.scrollIntoView()}
           className={styles.pageButton}>
           <div>contact</div>
           <div>contact</div>

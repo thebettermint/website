@@ -7,6 +7,7 @@
   --theme-bg-color: #dadada;
   --theme-border-color: rgb(49, 49, 49);
   --theme-color-dark: rgb(49, 49, 49);
+  --theme-panel-color: rgb(202, 202, 202);
   --theme-footer-bg: $color-frost;
 
   a {
@@ -26,6 +27,7 @@
   --theme-bg-color: #252525;
   --theme-color-dark: #e2e2e2;
   --theme-border-color: #e2e2e2;
+  --theme-panel-color: rgb(73, 73, 73);
   --theme-footer-bg: $color-charcoal;
 
   $theme-color-dark-hover: #2bff00;

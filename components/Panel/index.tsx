@@ -29,11 +29,21 @@ const Panel = ({ close, pages }: Props) => {
           close
         </div>
         <div className={style.items}>
-          <div onClick={() => handleNavClick('home')}>home</div>
-          <div onClick={() => handleNavClick('about')}>about</div>
-          <div onClick={() => handleNavClick('services')}>services</div>
-          <div onClick={() => handleNavClick('join')}>join</div>
-          <div onClick={() => handleNavClick('contact')}>contact</div>
+          <div className={style.nav} onClick={() => handleNavClick('home')}>
+            home
+          </div>
+          <div className={style.nav} onClick={() => handleNavClick('about')}>
+            about
+          </div>
+          <div className={style.nav} onClick={() => handleNavClick('services')}>
+            services
+          </div>
+          <div className={style.nav} onClick={() => handleNavClick('join')}>
+            join
+          </div>
+          <div className={style.nav} onClick={() => handleNavClick('contact')}>
+            contact
+          </div>
           <ThemeToggle />
         </div>
       </div>

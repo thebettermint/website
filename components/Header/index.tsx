@@ -64,11 +64,21 @@ const Header = ({ home, services, about, contact, join }: Props) => {
 
       <div className={style.headerRight}>
         <div className={style.items}>
-          <div onClick={() => home.current.scrollIntoView()}>home</div>
-          <div onClick={() => about.current.scrollIntoView()}>about</div>
-          <div onClick={() => services.current.scrollIntoView()}>services</div>
-          <div onClick={() => join.current.scrollIntoView()}>join</div>
-          <div onClick={() => contact.current.scrollIntoView()}>contact</div>
+          <div className={style.nav} onClick={() => home.current.scrollIntoView()}>
+            home
+          </div>
+          <div className={style.nav} onClick={() => about.current.scrollIntoView()}>
+            about
+          </div>
+          <div className={style.nav} onClick={() => services.current.scrollIntoView()}>
+            services
+          </div>
+          <div className={style.nav} onClick={() => join.current.scrollIntoView()}>
+            join
+          </div>
+          <div className={style.nav} onClick={() => contact.current.scrollIntoView()}>
+            contact
+          </div>
           <ThemeToggle />
         </div>
         <div className={style.ham} onClick={handleMenuClick}>
