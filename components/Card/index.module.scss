@@ -2,30 +2,91 @@
 @import '../../styles/scss/default/themes';
 
 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-color: transparent;
+
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid;
-  border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
   background-color: var(--theme-color);
+  position: relative;
 
-  &:hover {
-    cursor: pointer;
-    color: var(--theme-color-dark);
+  height: fit-content;
+  width: fit-content;
+
+  @media #{$lg-layout} {
+    height: 250px;
+    max-width: 300px;
   }
 
-  h2 {
-    margin: 0 0 1rem 0;
-    font-size: 1.5rem;
+  @media #{$md-layout} {
+    height: 150px;
+    max-width: 200px;
+  }
+  @media #{$sm-layout} {
+    height: 150px;
+    max-width: 200px;
   }
 
-  p {
-    margin: 0;
-    font-size: 1.25rem;
-    line-height: 1.5;
+  @media #{$large-mobile} {
+    height: 150px;
+    max-width: 175px;
+  }
+
+  /*   @media #{$sm-layout} {
+    max-width: 100px;
+  } */
+
+  .svg {
+    position: relative;
+    stroke-width: 2px;
+    fill: --theme-bg-color;
+    animation: test 10s ease-in-out alternate infinite;
+
+    @keyframes test {
+      0% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(360deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @media #{$sm-layout} {
+      stroke-width: 2px;
+    }
+  }
+
+  .content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100px;
+
+    font-family: MontserratAlt;
+    color: black;
+
+    font-size: 0.9em;
+    div {
+      margin-top: 12px;
+    }
+
+    @media #{$large-mobile} {
+      font-size: 12px;
+    }
   }
 }

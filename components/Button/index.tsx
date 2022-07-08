@@ -1,5 +1,5 @@
 import React, { ReactNode, useState, useRef, useEffect } from 'react';
-import style from './index.module.scss';
+import styles from './index.module.scss';
 
 interface IThemeList {
   [index: string]: any;
@@ -24,6 +24,7 @@ interface Props {
   loader?: boolean;
   children?: JSX.Element | JSX.Element[] | ReactNode;
   className?: string;
+  style?: any;
   onClick: () => void | Promise<void>;
 }
 
@@ -47,6 +48,7 @@ const Index = ({
   loader,
   children,
   className,
+  style,
   onClick,
 }: Props) => {
   const [isClicked, setIsClicked] = useState<Boolean>(false);
@@ -91,7 +93,7 @@ const Index = ({
     <div className={className}>
       <div
         ref={buttonRef}
-        className={`${style[buttonType]} ${style[themeStyle]}`}
+        className={`${styles[buttonType]} ${styles[themeStyle]}`}
         style={{
           width: width,
           height: height,
