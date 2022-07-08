@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="324.92mm"
+   height="235.28mm"
+   version="1.1"
+   viewBox="0 0 324.92 235.28"
+   id="svg16"
+   sodipodi:docname="molecular.svg"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.22047253"
+     inkscape:cx="-1002.3924"
+     inkscape:cy="142.87494"
+     inkscape:window-width="2199"
+     inkscape:window-height="1027"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg16" />
+  <g
+     id="g2298">
+    <path
+       d="M 41.67673,164.13555 1.41526,140.89096 V 94.400713 L 41.67673,71.156121 81.93821,94.400713 v 46.490247 z"
+       fill="#ffeae1"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-width="2.83017"
+       style="font-variation-settings:'wght' 500"
+       id="path1604" />
+    <path
+       d="M 81.93821,94.400713 41.67674,71.156121 V 24.665874 L 81.93821,1.4212816 122.19969,24.665874 v 46.490247 z"
+       fill="#ffecfd"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-width="2.83017"
+       style="font-variation-settings:'wght' 500"
+       id="path1728" />
+    <path
+       d="M 122.19673,164.13555 81.93526,140.89096 V 94.400713 l 40.26147,-23.244592 40.26148,23.244592 v 46.490247 z"
+       fill="#ffffec"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-width="2.83017"
+       style="font-variation-settings:'wght' 500"
+       id="path1846" />
+    <path
+       d="M 162.45821,233.87039 122.19674,210.6258 v -46.49025 l 40.26147,-23.24459 40.26148,23.24459 v 46.49025 z"
+       fill="#fff2e3"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-width="2.83017"
+       style="font-variation-settings:'wght' 500"
+       id="path2044" />
+    <path
+       d="M 283.24263,164.13555 242.98116,140.89096 V 94.400714 l 40.26147,-23.244592 40.26148,23.244592 v 46.490246 z"
+       fill="#eae6ff"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-width="2.83017"
+       style="font-variation-settings:'wght' 500"
+       id="path2082" />
+    <path
+       d="M 202.71968,164.13555 162.45821,140.89096 V 94.400713 l 40.26147,-23.244592 40.26148,23.244592 v 46.490247 z"
+       fill="#eefff5"
+       stroke="#000000"
+       stroke-linejoin="round"
+       stroke-width="2.83017"
+       style="font-variation-settings:'wght' 500"
+       id="path2200" />
+  </g>
+</svg>
