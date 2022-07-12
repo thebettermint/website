@@ -6,8 +6,9 @@ import React, {
   MouseEventHandler,
   ReactNode,
   forwardRef,
-  LegacyRef,
   ChangeEventHandler,
+  useImperativeHandle,
+  Ref,
 } from 'react';
 import style from './index.module.scss';
 
@@ -38,16 +39,25 @@ interface Props {
   onChange?: ChangeEventHandler<HTMLInputElement>;
 }
 
+/* type RefHandle = {
+  clear: () => void;
+} | null;
+ */
 var invalidChars = ['-', '+', 'e'];
 
 const Input = forwardRef(
   (
     { type, value, placeholder, label, children, className, onFocus, onUnfocus, onChange }: Props,
-    ref: LegacyRef<HTMLInputElement> | undefined
+    ref: Ref<any> | undefined
   ) => {
     const labelRef = useRef<HTMLLabelElement>(null);
+    const [inputValue, setInputValue] = useState<string | undefined>(value ? value : '');
 
-    const [inputValue, setInputValue] = useState<string | undefined>(value ? value : undefined);
+    useImperativeHandle(ref, () => ({
+      clear: () => {
+        setInputValue('');
+      },
+    }));
 
     const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
       if (!labelRef || !labelRef.current) return;
