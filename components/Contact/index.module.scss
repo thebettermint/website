@@ -92,4 +92,13 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .successMsg {
+    font-size: 12px;
+    color: rgb(35, 138, 31);
+  }
+  .errorMsg {
+    font-size: 12px;
+    color: rgb(138, 31, 31);
+  }
 }
