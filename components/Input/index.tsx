@@ -39,16 +39,16 @@ interface Props {
   onChange?: ChangeEventHandler<HTMLInputElement>;
 }
 
-/* type RefHandle = {
+type RefHandle = {
   clear: () => void;
 } | null;
- */
+
 var invalidChars = ['-', '+', 'e'];
 
 const Input = forwardRef(
   (
     { type, value, placeholder, label, children, className, onFocus, onUnfocus, onChange }: Props,
-    ref: Ref<any> | undefined
+    ref: Ref<RefHandle> | undefined
   ) => {
     const labelRef = useRef<HTMLLabelElement>(null);
     const [inputValue, setInputValue] = useState<string | undefined>(value ? value : '');
@@ -57,6 +57,7 @@ const Input = forwardRef(
       clear: () => {
         setInputValue('');
       },
+      value: inputValue,
     }));
 
     const handleFocus = (e: React.FocusEvent<HTMLInputElement>) => {
