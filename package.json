@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@svgr/webpack": "^6.2.1",
+    "dotenv": "^16.0.1",
+    "emailjs-com": "^3.2.0",
     "media": "https://github.com/thebettermint/media.git",
     "next": "12.1.6",
     "path": "^0.12.7",
